@@ -1,0 +1,81 @@
+%btn-base {
+  @include inline-flexbox(start);
+  padding: 0 8px;
+  border-radius: 4px;
+  font-weight: 700;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}
+
+// 버튼은 크게 styles, sizes, states로 나눌 수 있다.
+// Note: Button Styles (filled, outlined, ghost)
+
+.btn-primary {
+  @extend %btn-base;
+  background-color: $blue;
+  color: $white;
+
+  &:not(:disabled):hover {
+    background-color: $blue-dark;
+    transition: background-color 200ms ease-in-out;
+  }
+}
+
+.btn-secondary {
+  @extend %btn-base;
+  background-color: $border;
+  color: $primary;
+
+  &:not(:disabled):hover {
+    background-color: $tertiary;
+    transition: background-color 200ms ease-in-out;
+  }
+}
+
+.btn-outlined {
+  @extend %btn-base;
+  border: 1px solid $blue;
+  background-color: $white;
+  color: $blue;
+
+  &:not(:disabled):hover {
+    background-color: $blue-light;
+    transition: background-color 200ms ease-in-out;
+  }
+}
+
+.btn-ghost {
+  @extend %btn-base;
+  background-color: transparent;
+  color: $primary;
+
+  &:not(:disabled):hover {
+    color: $secondary;
+    transition: color 200ms ease-in-out;
+  }
+}
+
+// Note: Button Sizes
+
+.btn-32 {
+  @include text-style(14);
+  height: 32px;
+}
+
+.btn-40 {
+  @include text-style(16);
+  height: 40px;
+}
+
+.btn-48 {
+  @include text-style(16);
+  height: 48px;
+}
+
+.btn-55 {
+  @include text-style(18);
+  height: 55px;
+}
