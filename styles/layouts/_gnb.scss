@@ -1,6 +1,6 @@
 .gnb {
   position: relative;
-  border-bottom: 1px solid $secondary;
+  border-bottom: 1px solid $border;
 
   &-wrapper {
     @include flexbox(between);
