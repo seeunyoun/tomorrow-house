@@ -28,8 +28,6 @@
 }
 
 .price-16 {
-  @extend %price-base;
-
   .amount {
     font-size: 16px;
   }
@@ -40,8 +38,6 @@
 }
 
 .price-20 {
-  @extend %price-base;
-
   .amount {
     font-size: 20px;
   }
@@ -52,8 +48,6 @@
 }
 
 .price-32 {
-  @extend %price-base;
-
   .amount {
     font-size: 32px;
   }
