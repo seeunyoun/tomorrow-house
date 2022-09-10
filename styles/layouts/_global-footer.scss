@@ -1,4 +1,5 @@
 .global-footer {
+  margin-bottom: $order-cta-height;
   padding-top: 32px;
   padding-bottom: 40px;
   background-color: $background;
@@ -49,6 +50,8 @@
   }
 
   @include responsive(D) {
+    margin-bottom: 0;
+    
     &-title {
       @include text-style(14);
     }
