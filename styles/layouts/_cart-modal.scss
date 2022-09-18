@@ -2,12 +2,17 @@
   @include pos-center(fixed);
   overflow: hidden;
   z-index: $cart-modal-level;
+  display: none;
   width: calc(100% - #{$grid-margin * 2});
   max-width: 360px;
   padding: 40px 24px;
   border-radius: 8px;
   background-color: $white;
   text-align: center;
+
+  &.is-active {
+    display: block;
+  }
 
   .cart-title {
     @include text-style(16, $dark);
@@ -30,7 +35,7 @@
   @include responsive(D) {
     padding-right: 32px;
     padding-left: 32px;
-    
+
     .cart-title {
       @include text-style(18);
       margin-bottom: 16px;
