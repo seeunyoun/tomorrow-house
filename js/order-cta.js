@@ -42,4 +42,5 @@ const replaceNewCountText = (hasActiveClass, newCount, spanHtml) => {
   }
 
   spanHtml.innerText = newCount.toLocaleString()
+  spanHtml.setAttribute('aria-label', `북마크 ${newCount.toLocaleString()}회`)
 }
