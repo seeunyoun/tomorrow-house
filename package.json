@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/seeunyoun/tomorrow-house#readme",
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^7.0.1"
   }
 }
